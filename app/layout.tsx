@@ -15,6 +15,7 @@ export default function RootLayout({
 }: {
   children: React.ReactNode;
 }) {
+  console.log("Have a great day! 📣🐢");
   return (
     <html lang="en">
       <body className={`${inter.className}, flex w-full`}>
