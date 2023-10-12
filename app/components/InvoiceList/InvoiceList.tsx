@@ -13,6 +13,17 @@ type Props = {
   dueDate: string;
   isPaid: boolean;
 };
+export const createPaymentStatusClassName = ({
+  paymentStatus,
+}: {
+  paymentStatus: string;
+}) => {
+  const obj = {
+    Paid: "text-green-500",
+    overdue: "text-red-500",
+  }[paymentStatus];
+  return obj ?? "text-gray-500";
+};
 
 export const InvoiceList = ({
   linkHref,
@@ -29,13 +40,9 @@ export const InvoiceList = ({
   const comparedDates = compareDates({ dueDate });
   const paymentStatus: string = isPaid ? "Paid" : comparedDates;
 
-  console.log(paymentStatus);
-  const paymentStatusClassName =
-    paymentStatus === "Paid"
-      ? "text-green-500"
-      : paymentStatus === ("overdue" as string)
-      ? "text-red-500"
-      : "text-gray-500";
+  const paymentStatusClassName = createPaymentStatusClassName({
+    paymentStatus,
+  });
 
   return (
     <li className={`flex items-center ${activeClass}`}>

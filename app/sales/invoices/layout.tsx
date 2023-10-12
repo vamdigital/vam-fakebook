@@ -25,7 +25,7 @@ export default function InvoiceLayout({ children }: Props) {
                 isPaid={false}
               />
               <InvoiceList
-                linkHref="/sales/invoices/1"
+                linkHref="/sales/invoices/2"
                 amountDue={8000}
                 customerName="Stankonia"
                 customerSince="2000"
@@ -33,93 +33,13 @@ export default function InvoiceLayout({ children }: Props) {
                 isPaid={false}
               />
               <InvoiceList
-                linkHref="/sales/invoices/1"
+                linkHref="/sales/invoices/3"
                 amountDue={9500}
                 customerName="Ocean Avenue"
                 customerSince="2003"
                 dueDate="09/27/2023"
                 isPaid={true}
               />
-              {/* <li className="flex items-center bg-gray-200">
-                <Link
-                  href="/"
-                  className="flex justify-between w-full
-                  p-4"
-                >
-                  <div className="flex flex-col">
-                    <h2 className="font-bold text-sm">Santa Monica</h2>
-                    <h4 className="text-sm">1995</h4>
-                  </div>
-                  <div className="flex flex-col text-center">
-                    <h2 className="font-bold text-sm">$10,800</h2>
-                    <h4 className="uppercase text-sm">Overdue</h4>
-                  </div>
-                </Link>
-              </li>
-              <li className="flex items-center">
-                <Link
-                  href="/"
-                  className="flex justify-between w-full
-                  p-4"
-                >
-                  <div className="flex flex-col">
-                    <h2 className="font-bold text-sm">Santa Monica</h2>
-                    <h4 className="text-sm">1995</h4>
-                  </div>
-                  <div className="flex flex-col text-center">
-                    <h2 className="font-bold text-sm">$10,800</h2>
-                    <h4 className="uppercase text-sm">Overdue</h4>
-                  </div>
-                </Link>
-              </li>
-              <li className="flex items-center">
-                <Link
-                  href="/"
-                  className="flex justify-between w-full
-                  p-4"
-                >
-                  <div className="flex flex-col">
-                    <h2 className="font-bold text-sm">Santa Monica</h2>
-                    <h4 className="text-sm">1995</h4>
-                  </div>
-                  <div className="flex flex-col text-center">
-                    <h2 className="font-bold text-sm">$10,800</h2>
-                    <h4 className="uppercase text-sm">Overdue</h4>
-                  </div>
-                </Link>
-              </li>
-              <li className="flex items-center">
-                <Link
-                  href="/"
-                  className="flex justify-between w-full
-                  p-4"
-                >
-                  <div className="flex flex-col">
-                    <h2 className="font-bold text-sm">Santa Monica</h2>
-                    <h4 className="text-sm">1995</h4>
-                  </div>
-                  <div className="flex flex-col text-center">
-                    <h2 className="font-bold text-sm">$10,800</h2>
-                    <h4 className="uppercase text-sm">Overdue</h4>
-                  </div>
-                </Link>
-              </li>
-              <li className="flex items-center">
-                <Link
-                  href="/"
-                  className="flex justify-between w-full
-                  p-4"
-                >
-                  <div className="flex flex-col">
-                    <h2 className="font-bold text-sm">Santa Monica</h2>
-                    <h4 className="text-sm">1995</h4>
-                  </div>
-                  <div className="flex flex-col text-center">
-                    <h2 className="font-bold text-sm">$10,800</h2>
-                    <h4 className="uppercase text-sm">Overdue</h4>
-                  </div>
-                </Link>
-              </li> */}
             </ul>
           </div>
           <div className="flex flex-col w-full justify-center px-5 items-center">
